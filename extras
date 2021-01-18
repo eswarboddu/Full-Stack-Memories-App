@@ -1,0 +1,43 @@
+> create two folders : client for front end, server for backend
+//Setup
+> Client :
+    1. npx create-react-app ./
+    2. npm i axios moment react-file-base64 redux redux-thunk @material-ui/core
+
+    axios (to make api calls)
+    moment (library to work with time and data)
+    react-file-base64 (to convert images)
+    redux-thunk (used for asynchronous actions in redux)
+
+> SERVER :
+INSTALLATION: 
+    1. npm init -y   (to initialize empty package.json)
+    2. npm i body-parser cors express mongoose nodemon
+
+    body-parser (to send post requests)
+    cors (to enable cross-original request)
+    express (backend framework)
+    mongoose (to create models for our posts)
+    nodemon (to update backend server automatically)
+
+    in package.json : add a type : module under main to work the import statements in index.js and change the scripts to start  
+
+Monogo DB SETUP:
+    1. To connect server application with real database, use cloud/atlas version of mongodb
+    which means mongodb is going to host our database into cloud.
+    2. https://www.mongodb.com/cloud/atlas
+    3. login : google account eswarboddu1995@gmail.com
+    4. Build a cluster
+    5. Select shared cluster which is free
+    6. click on create cluster
+    7. On the left dropdown menu, under the security: 
+        a. Database Access : Add new database user and give the username and password
+        b. Network Access : Add ip address > add current ip address
+    8. Now, go to cluster and click on connect > connect your application and copy the link
+       and paste it in the index.js in server folder and name it as Connection_url
+
+Mongoose :
+    It is used to connect to database
+
+
+
